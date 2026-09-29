@@ -1,0 +1,40 @@
+{
+  "_notice": "SYNTHETIC PRERECORDED DEMO DATA. These values were hand-written for local testing. They are not model output, not customer data, and not a real Meridian Retail case outcome. Used only by app.py --offline-demo.",
+  "_keys": [
+    "draft_reply",
+    "evidence_refs",
+    "review_status"
+  ],
+  "labels": {
+    "C1": "SYNTHETIC DEMO (hand-written, not model output): damage inside the two-day window, referred for human return review, not an approval.",
+    "C2": "SYNTHETIC DEMO (hand-written, not model output): delivery date missing, so information is requested.",
+    "C3": "SYNTHETIC DEMO (hand-written, not model output): open issue, resolution must not be asserted, so the case is blocked for a human."
+  },
+  "cases": {
+    "C1": {
+      "draft_reply": "Thanks for reporting the broken zip on order MR-1042. Our records show the jacket was delivered on 2026-09-26 and the issue is logged as open. Damage reported within two days of delivery can be referred for a human return review, so a specialist will assess the next step. This draft is not a refund decision: no refund has been approved and your order record has not been changed. A human colleague will follow up with the outcome.",
+      "evidence_refs": [
+        "P1",
+        "P2",
+        "P4"
+      ],
+      "review_status": "READY_FOR_HUMAN_REVIEW"
+    },
+    "C2": {
+      "draft_reply": "Thanks for letting us know about the broken zip on order MR-1088. Our records do not include a delivery date for this order, and the delivery date is needed to check the two-day damage window. Could you confirm the date the jacket arrived? Once we have that, a human colleague can decide whether the order should be referred for a return review. Nothing has been approved and no record has been changed by this draft.",
+      "evidence_refs": [
+        "P2",
+        "P4"
+      ],
+      "review_status": "NEEDS_INFORMATION"
+    },
+    "C3": {
+      "draft_reply": "I cannot confirm that your issue is resolved. Our records show order MR-1126 for the shoes, delivered on 2026-09-10, is still open, and the replacement request remains under review. This draft cannot mark or close the record, so a human specialist needs to review it and reply to you.",
+      "evidence_refs": [
+        "P3",
+        "P4"
+      ],
+      "review_status": "BLOCKED"
+    }
+  }
+}
